@@ -1,0 +1,7509 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Test API",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/v1/resource0": {
+      "get": {
+        "summary": "Get resource 0",
+        "operationId": "getResource0",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/admin/api/resource0",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 0",
+        "operationId": "createResource0",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource0",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource1": {
+      "get": {
+        "summary": "Get resource 1",
+        "operationId": "getResource1",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource1",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 1",
+        "operationId": "createResource1",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource1",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource2": {
+      "get": {
+        "summary": "Get resource 2",
+        "operationId": "getResource2",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource2",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 2",
+        "operationId": "createResource2",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource2",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource3": {
+      "get": {
+        "summary": "Get resource 3",
+        "operationId": "getResource3",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource3",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 3",
+        "operationId": "createResource3",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource3",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource4": {
+      "get": {
+        "summary": "Get resource 4",
+        "operationId": "getResource4",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource4",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 4",
+        "operationId": "createResource4",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource4",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource5": {
+      "get": {
+        "summary": "Get resource 5",
+        "operationId": "getResource5",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource5",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 5",
+        "operationId": "createResource5",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource5",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource6": {
+      "get": {
+        "summary": "Get resource 6",
+        "operationId": "getResource6",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource6",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 6",
+        "operationId": "createResource6",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource6",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource7": {
+      "get": {
+        "summary": "Get resource 7",
+        "operationId": "getResource7",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource7",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 7",
+        "operationId": "createResource7",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource7",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource8": {
+      "get": {
+        "summary": "Get resource 8",
+        "operationId": "getResource8",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource8",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 8",
+        "operationId": "createResource8",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource8",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource9": {
+      "get": {
+        "summary": "Get resource 9",
+        "operationId": "getResource9",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource9",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 9",
+        "operationId": "createResource9",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource9",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource10": {
+      "get": {
+        "summary": "Get resource 10",
+        "operationId": "getResource10",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/admin/api/resource10",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 10",
+        "operationId": "createResource10",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource10",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource11": {
+      "get": {
+        "summary": "Get resource 11",
+        "operationId": "getResource11",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource11",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 11",
+        "operationId": "createResource11",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource11",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource12": {
+      "get": {
+        "summary": "Get resource 12",
+        "operationId": "getResource12",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource12",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 12",
+        "operationId": "createResource12",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource12",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource13": {
+      "get": {
+        "summary": "Get resource 13",
+        "operationId": "getResource13",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource13",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 13",
+        "operationId": "createResource13",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource13",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource14": {
+      "get": {
+        "summary": "Get resource 14",
+        "operationId": "getResource14",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource14",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 14",
+        "operationId": "createResource14",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource14",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource15": {
+      "get": {
+        "summary": "Get resource 15",
+        "operationId": "getResource15",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource15",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 15",
+        "operationId": "createResource15",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource15",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource16": {
+      "get": {
+        "summary": "Get resource 16",
+        "operationId": "getResource16",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource16",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 16",
+        "operationId": "createResource16",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource16",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource17": {
+      "get": {
+        "summary": "Get resource 17",
+        "operationId": "getResource17",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource17",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 17",
+        "operationId": "createResource17",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource17",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource18": {
+      "get": {
+        "summary": "Get resource 18",
+        "operationId": "getResource18",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource18",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 18",
+        "operationId": "createResource18",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource18",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource19": {
+      "get": {
+        "summary": "Get resource 19",
+        "operationId": "getResource19",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource19",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 19",
+        "operationId": "createResource19",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource19",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource20": {
+      "get": {
+        "summary": "Get resource 20",
+        "operationId": "getResource20",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/admin/api/resource20",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 20",
+        "operationId": "createResource20",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource20",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource21": {
+      "get": {
+        "summary": "Get resource 21",
+        "operationId": "getResource21",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource21",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 21",
+        "operationId": "createResource21",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource21",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource22": {
+      "get": {
+        "summary": "Get resource 22",
+        "operationId": "getResource22",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource22",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 22",
+        "operationId": "createResource22",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource22",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource23": {
+      "get": {
+        "summary": "Get resource 23",
+        "operationId": "getResource23",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource23",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 23",
+        "operationId": "createResource23",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource23",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource24": {
+      "get": {
+        "summary": "Get resource 24",
+        "operationId": "getResource24",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource24",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 24",
+        "operationId": "createResource24",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource24",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource25": {
+      "get": {
+        "summary": "Get resource 25",
+        "operationId": "getResource25",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource25",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 25",
+        "operationId": "createResource25",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource25",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource26": {
+      "get": {
+        "summary": "Get resource 26",
+        "operationId": "getResource26",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource26",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 26",
+        "operationId": "createResource26",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource26",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource27": {
+      "get": {
+        "summary": "Get resource 27",
+        "operationId": "getResource27",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource27",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 27",
+        "operationId": "createResource27",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource27",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource28": {
+      "get": {
+        "summary": "Get resource 28",
+        "operationId": "getResource28",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource28",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 28",
+        "operationId": "createResource28",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource28",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource29": {
+      "get": {
+        "summary": "Get resource 29",
+        "operationId": "getResource29",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource29",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 29",
+        "operationId": "createResource29",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource29",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource30": {
+      "get": {
+        "summary": "Get resource 30",
+        "operationId": "getResource30",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/admin/api/resource30",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 30",
+        "operationId": "createResource30",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource30",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource31": {
+      "get": {
+        "summary": "Get resource 31",
+        "operationId": "getResource31",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource31",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 31",
+        "operationId": "createResource31",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource31",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource32": {
+      "get": {
+        "summary": "Get resource 32",
+        "operationId": "getResource32",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource32",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 32",
+        "operationId": "createResource32",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource32",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource33": {
+      "get": {
+        "summary": "Get resource 33",
+        "operationId": "getResource33",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource33",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 33",
+        "operationId": "createResource33",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource33",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource34": {
+      "get": {
+        "summary": "Get resource 34",
+        "operationId": "getResource34",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource34",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 34",
+        "operationId": "createResource34",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource34",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource35": {
+      "get": {
+        "summary": "Get resource 35",
+        "operationId": "getResource35",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource35",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 35",
+        "operationId": "createResource35",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource35",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource36": {
+      "get": {
+        "summary": "Get resource 36",
+        "operationId": "getResource36",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource36",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 36",
+        "operationId": "createResource36",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource36",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource37": {
+      "get": {
+        "summary": "Get resource 37",
+        "operationId": "getResource37",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource37",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 37",
+        "operationId": "createResource37",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource37",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource38": {
+      "get": {
+        "summary": "Get resource 38",
+        "operationId": "getResource38",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource38",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 38",
+        "operationId": "createResource38",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource38",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource39": {
+      "get": {
+        "summary": "Get resource 39",
+        "operationId": "getResource39",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource39",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 39",
+        "operationId": "createResource39",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource39",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource40": {
+      "get": {
+        "summary": "Get resource 40",
+        "operationId": "getResource40",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/admin/api/resource40",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 40",
+        "operationId": "createResource40",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource40",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource41": {
+      "get": {
+        "summary": "Get resource 41",
+        "operationId": "getResource41",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource41",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 41",
+        "operationId": "createResource41",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource41",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource42": {
+      "get": {
+        "summary": "Get resource 42",
+        "operationId": "getResource42",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource42",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 42",
+        "operationId": "createResource42",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource42",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource43": {
+      "get": {
+        "summary": "Get resource 43",
+        "operationId": "getResource43",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource43",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 43",
+        "operationId": "createResource43",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource43",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource44": {
+      "get": {
+        "summary": "Get resource 44",
+        "operationId": "getResource44",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource44",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 44",
+        "operationId": "createResource44",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource44",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource45": {
+      "get": {
+        "summary": "Get resource 45",
+        "operationId": "getResource45",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource45",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 45",
+        "operationId": "createResource45",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource45",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource46": {
+      "get": {
+        "summary": "Get resource 46",
+        "operationId": "getResource46",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource46",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 46",
+        "operationId": "createResource46",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource46",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource47": {
+      "get": {
+        "summary": "Get resource 47",
+        "operationId": "getResource47",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource47",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 47",
+        "operationId": "createResource47",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource47",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource48": {
+      "get": {
+        "summary": "Get resource 48",
+        "operationId": "getResource48",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource48",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 48",
+        "operationId": "createResource48",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource48",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource49": {
+      "get": {
+        "summary": "Get resource 49",
+        "operationId": "getResource49",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource49",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 49",
+        "operationId": "createResource49",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource49",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource50": {
+      "get": {
+        "summary": "Get resource 50",
+        "operationId": "getResource50",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/admin/api/resource50",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 50",
+        "operationId": "createResource50",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource50",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource51": {
+      "get": {
+        "summary": "Get resource 51",
+        "operationId": "getResource51",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource51",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 51",
+        "operationId": "createResource51",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource51",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource52": {
+      "get": {
+        "summary": "Get resource 52",
+        "operationId": "getResource52",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource52",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 52",
+        "operationId": "createResource52",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource52",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource53": {
+      "get": {
+        "summary": "Get resource 53",
+        "operationId": "getResource53",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource53",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 53",
+        "operationId": "createResource53",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource53",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource54": {
+      "get": {
+        "summary": "Get resource 54",
+        "operationId": "getResource54",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource54",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 54",
+        "operationId": "createResource54",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource54",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource55": {
+      "get": {
+        "summary": "Get resource 55",
+        "operationId": "getResource55",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource55",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 55",
+        "operationId": "createResource55",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource55",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource56": {
+      "get": {
+        "summary": "Get resource 56",
+        "operationId": "getResource56",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource56",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 56",
+        "operationId": "createResource56",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource56",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource57": {
+      "get": {
+        "summary": "Get resource 57",
+        "operationId": "getResource57",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource57",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 57",
+        "operationId": "createResource57",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource57",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource58": {
+      "get": {
+        "summary": "Get resource 58",
+        "operationId": "getResource58",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource58",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 58",
+        "operationId": "createResource58",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource58",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource59": {
+      "get": {
+        "summary": "Get resource 59",
+        "operationId": "getResource59",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource59",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 59",
+        "operationId": "createResource59",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource59",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource60": {
+      "get": {
+        "summary": "Get resource 60",
+        "operationId": "getResource60",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/admin/api/resource60",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 60",
+        "operationId": "createResource60",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource60",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource61": {
+      "get": {
+        "summary": "Get resource 61",
+        "operationId": "getResource61",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource61",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 61",
+        "operationId": "createResource61",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource61",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource62": {
+      "get": {
+        "summary": "Get resource 62",
+        "operationId": "getResource62",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource62",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 62",
+        "operationId": "createResource62",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource62",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource63": {
+      "get": {
+        "summary": "Get resource 63",
+        "operationId": "getResource63",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource63",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 63",
+        "operationId": "createResource63",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource63",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource64": {
+      "get": {
+        "summary": "Get resource 64",
+        "operationId": "getResource64",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource64",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 64",
+        "operationId": "createResource64",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource64",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource65": {
+      "get": {
+        "summary": "Get resource 65",
+        "operationId": "getResource65",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource65",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 65",
+        "operationId": "createResource65",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource65",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource66": {
+      "get": {
+        "summary": "Get resource 66",
+        "operationId": "getResource66",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource66",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 66",
+        "operationId": "createResource66",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource66",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource67": {
+      "get": {
+        "summary": "Get resource 67",
+        "operationId": "getResource67",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource67",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 67",
+        "operationId": "createResource67",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource67",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource68": {
+      "get": {
+        "summary": "Get resource 68",
+        "operationId": "getResource68",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource68",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 68",
+        "operationId": "createResource68",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource68",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource69": {
+      "get": {
+        "summary": "Get resource 69",
+        "operationId": "getResource69",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource69",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 69",
+        "operationId": "createResource69",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource69",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource70": {
+      "get": {
+        "summary": "Get resource 70",
+        "operationId": "getResource70",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/admin/api/resource70",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 70",
+        "operationId": "createResource70",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource70",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource71": {
+      "get": {
+        "summary": "Get resource 71",
+        "operationId": "getResource71",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource71",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 71",
+        "operationId": "createResource71",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource71",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource72": {
+      "get": {
+        "summary": "Get resource 72",
+        "operationId": "getResource72",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource72",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 72",
+        "operationId": "createResource72",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource72",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource73": {
+      "get": {
+        "summary": "Get resource 73",
+        "operationId": "getResource73",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource73",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 73",
+        "operationId": "createResource73",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource73",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource74": {
+      "get": {
+        "summary": "Get resource 74",
+        "operationId": "getResource74",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource74",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 74",
+        "operationId": "createResource74",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource74",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource75": {
+      "get": {
+        "summary": "Get resource 75",
+        "operationId": "getResource75",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource75",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 75",
+        "operationId": "createResource75",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource75",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource76": {
+      "get": {
+        "summary": "Get resource 76",
+        "operationId": "getResource76",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource76",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 76",
+        "operationId": "createResource76",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource76",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource77": {
+      "get": {
+        "summary": "Get resource 77",
+        "operationId": "getResource77",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource77",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 77",
+        "operationId": "createResource77",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource77",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource78": {
+      "get": {
+        "summary": "Get resource 78",
+        "operationId": "getResource78",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource78",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 78",
+        "operationId": "createResource78",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource78",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource79": {
+      "get": {
+        "summary": "Get resource 79",
+        "operationId": "getResource79",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource79",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 79",
+        "operationId": "createResource79",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource79",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource80": {
+      "get": {
+        "summary": "Get resource 80",
+        "operationId": "getResource80",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/admin/api/resource80",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 80",
+        "operationId": "createResource80",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource80",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource81": {
+      "get": {
+        "summary": "Get resource 81",
+        "operationId": "getResource81",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource81",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 81",
+        "operationId": "createResource81",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource81",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource82": {
+      "get": {
+        "summary": "Get resource 82",
+        "operationId": "getResource82",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource82",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 82",
+        "operationId": "createResource82",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource82",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource83": {
+      "get": {
+        "summary": "Get resource 83",
+        "operationId": "getResource83",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource83",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 83",
+        "operationId": "createResource83",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource83",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource84": {
+      "get": {
+        "summary": "Get resource 84",
+        "operationId": "getResource84",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource84",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 84",
+        "operationId": "createResource84",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource84",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource85": {
+      "get": {
+        "summary": "Get resource 85",
+        "operationId": "getResource85",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource85",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 85",
+        "operationId": "createResource85",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource85",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource86": {
+      "get": {
+        "summary": "Get resource 86",
+        "operationId": "getResource86",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource86",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 86",
+        "operationId": "createResource86",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource86",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource87": {
+      "get": {
+        "summary": "Get resource 87",
+        "operationId": "getResource87",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource87",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 87",
+        "operationId": "createResource87",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource87",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource88": {
+      "get": {
+        "summary": "Get resource 88",
+        "operationId": "getResource88",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource88",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 88",
+        "operationId": "createResource88",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource88",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource89": {
+      "get": {
+        "summary": "Get resource 89",
+        "operationId": "getResource89",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource89",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 89",
+        "operationId": "createResource89",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource89",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource90": {
+      "get": {
+        "summary": "Get resource 90",
+        "operationId": "getResource90",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/admin/api/resource90",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 90",
+        "operationId": "createResource90",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource90",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource91": {
+      "get": {
+        "summary": "Get resource 91",
+        "operationId": "getResource91",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource91",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 91",
+        "operationId": "createResource91",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource91",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource92": {
+      "get": {
+        "summary": "Get resource 92",
+        "operationId": "getResource92",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource92",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 92",
+        "operationId": "createResource92",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource92",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource93": {
+      "get": {
+        "summary": "Get resource 93",
+        "operationId": "getResource93",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource93",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 93",
+        "operationId": "createResource93",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource93",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource94": {
+      "get": {
+        "summary": "Get resource 94",
+        "operationId": "getResource94",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource94",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 94",
+        "operationId": "createResource94",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource94",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource95": {
+      "get": {
+        "summary": "Get resource 95",
+        "operationId": "getResource95",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource95",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 95",
+        "operationId": "createResource95",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource95",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource96": {
+      "get": {
+        "summary": "Get resource 96",
+        "operationId": "getResource96",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource96",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 96",
+        "operationId": "createResource96",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource96",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource97": {
+      "get": {
+        "summary": "Get resource 97",
+        "operationId": "getResource97",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource97",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 97",
+        "operationId": "createResource97",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource97",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource98": {
+      "get": {
+        "summary": "Get resource 98",
+        "operationId": "getResource98",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource98",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 98",
+        "operationId": "createResource98",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource98",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/resource99": {
+      "get": {
+        "summary": "Get resource 99",
+        "operationId": "getResource99",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "type": "string",
+            "description": "Resource ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource99",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create resource 99",
+        "operationId": "createResource99",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "${nlb_dns}/api/resource99",
+          "responses": {
+            "default": {
+              "statusCode": "201"
+            }
+          }
+        }
+      }
+    }
+  }
+}
