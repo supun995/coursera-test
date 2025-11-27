@@ -14,7 +14,7 @@ on:
 
 jobs:
   scanning:
-    uses: supun995/Git-Test/.github/workflows/downstream.yml@main
+    uses: supun995/Git-Test/.github/workflows/downstream.yml@master
     permissions:
       contents: read   # Required for repo access
       pull-requests: write  # Required for posting comments on PRs
