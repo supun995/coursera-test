@@ -37,7 +37,7 @@
           }
         },
         "x-amazon-apigateway-integration": {
-          "uri": "${nlb_dns}/admin/api/resource0",
+          "uri": "${nlb_dns}/api/resource0",
           "responses": {
             "default": {
               "statusCode": "200"
