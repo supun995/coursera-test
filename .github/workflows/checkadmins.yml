@@ -1,0 +1,27 @@
+name: Validate Swagger Files
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - edited
+    branches:
+      - pr-develop
+      - develop
+      - pre-prod
+      - main
+
+jobs:
+  scanning:
+    uses: supun995/Git-Test/.github/workflows/downstream.yml@main
+    permissions:
+      contents: read   # Required for repo access
+      pull-requests: write  # Required for posting comments on PRs
+      issues: write  # Required for updating PR comments
+    with:
+      swagger_file_path: docs/swagger.json
+      environment: "dev"
+      pr_number: ${{ github.event.pull_request.number }}
+      repo_owner: ${{ github.repository_owner }}
+      repo_name: ${{ github.event.repository.name }}
